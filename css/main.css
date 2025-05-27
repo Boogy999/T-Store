@@ -1,0 +1,58 @@
+/* Main CSS File - Imports all component CSS files */
+
+/* Main stylesheet - follows 7-1 pattern */
+
+/* Abstracts */
+@import 'abstracts/_variables.css';
+@import 'abstracts/_mixins.css';
+
+/* Base */
+@import 'base/_reset.css';
+@import 'base/_typography.css';
+
+/* Components */
+@import 'components/_buttons.css';
+@import 'components/_forms.css';
+@import 'components/_product-card.css';
+@import 'components/_newsletter.css';
+
+/* Layout */
+@import 'layout/_header.css';
+@import 'layout/_footer.css';
+@import 'layout/_grid.css';
+
+/* Pages */
+@import 'pages/home.css';
+@import 'pages/category.css';
+@import 'pages/product.css';
+@import 'pages/cart.css';
+@import 'pages/about.css';
+@import 'pages/contact.css';
+@import 'pages/faq.css';
+
+/* Vendors */
+@import 'vendors/_fontawesome.css';
+/* UI Components */
+@import 'components/hero.css';
+@import 'components/categories.css';
+@import 'components/products.css';
+@import 'components/colors.css';
+@import 'components/offers.css';
+@import 'components/newsletter.css';
+@import 'components/filters.css';
+@import 'components/faq.css';
+@import 'components/shipping.css';
+@import 'components/returns.css';
+@import 'components/banner.css';
+
+/* Page-specific Styles */
+@import 'pages/home.css';
+@import 'pages/category.css';
+@import 'pages/faq.css';
+@import 'pages/shipping.css';
+@import 'pages/contact.css';
+@import 'pages/about.css';
+
+/* Add additional page imports as needed */
+/* @import 'pages/about.css'; */
+/* @import 'pages/contact.css'; */

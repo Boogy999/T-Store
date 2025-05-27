@@ -1,0 +1,119 @@
+/* Grid system */
+
+.grid-container {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+/* Basic grid columns */
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Auto-fit grid */
+.grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+/* Grid with sidebar */
+.grid-with-sidebar {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: var(--spacing-lg);
+}
+
+/* Product grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+/* Responsive grids */
+@media (max-width: 1200px) {
+    .grid-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .grid-4,
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-with-sidebar {
+        grid-template-columns: 200px 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-4,
+    .grid-3,
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-with-sidebar {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Grid alignment */
+.grid-center {
+    align-items: center;
+}
+
+.grid-start {
+    align-items: start;
+}
+
+.grid-end {
+    align-items: end;
+}
+
+/* Grid spacing variations */
+.grid-gap-sm {
+    gap: var(--spacing-sm);
+}
+
+.grid-gap-md {
+    gap: var(--spacing-md);
+}
+
+.grid-gap-lg {
+    gap: var(--spacing-lg);
+}
+
+/* Grid item span */
+.span-2 {
+    grid-column: span 2;
+}
+
+.span-3 {
+    grid-column: span 3;
+}
+
+.span-4 {
+    grid-column: span 4;
+}
+
+@media (max-width: 768px) {
+    .span-2,
+    .span-3,
+    .span-4 {
+        grid-column: span 1;
+    }
+}

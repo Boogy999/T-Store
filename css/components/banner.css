@@ -1,0 +1,86 @@
+/* Banner Component Styles */
+.page-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--banner-image);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.page-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-banner p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Banner Variations */
+.contact-banner {
+    --banner-image: url('../images/contact-banner.jpg');
+}
+
+.about-banner {
+    --banner-image: url('../images/about-banner.jpg');
+}
+
+.faq-banner {
+    --banner-image: url('../images/faq-banner.jpg');
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-banner {
+        padding: 60px 0;
+    }
+
+    .page-banner h2 {
+        font-size: 2rem;
+    }
+
+    .page-banner p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}
+
+/* Animation */
+.page-banner h2 {
+    animation: fadeInDown 0.8s ease forwards;
+}
+
+.page-banner p {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
